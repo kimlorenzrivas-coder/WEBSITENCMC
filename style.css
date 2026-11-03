@@ -1,0 +1,320 @@
+
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo and School Name */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+   
+}
+
+.logo h2 {
+    color: orange;
+    font-size: 30px;
+}
+
+.logo p {
+    color: rgb(192, 137, 34);
+    font-size: 12px;
+}
+
+/* Navigation */
+nav a {
+    color: rgb(34, 138, 229);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: rgb(55, 200, 249);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Home Section */
+.home {
+    height: 450px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("home_cover.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home-content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: rgb(0, 166, 255);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0089d9;
+}
+
+/* About Section */
+.about {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.about h1 {
+    color: #172c50;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+}
+
+/* Announcements */
+.announcements {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.announcements h1 {
+    color: #172c50;
+    margin-bottom: 30px;
+}
+
+.announcement-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.announcement-box {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.announcement-box h3 {
+    color: #0089d9;
+    margin-bottom: 15px;
+}
+
+.announcement-box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Courses */
+.courses {
+    background-color: white;
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.courses h1 {
+    color: #172c50;
+    margin-bottom: 15px;
+}
+
+.courses > p {
+    margin-bottom: 30px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-box {
+    background-color: #f5f5f5;
+    width: 280px;
+    padding: 25px;
+    border-left: 5px solid orange;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.course-box h3 {
+    color: #172c50;
+    margin-bottom: 15px;
+}
+
+.course-box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Admission */
+.admission {
+    background-color: #172c50;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.admission h1 {
+    margin-bottom: 20px;
+}
+
+.admission p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Contact */
+.contact {
+    background-color: rgb(255, 255, 255);
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #172c50;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d98200;
+}
+
+/* Footer */
+footer {
+    background-color: #101f38;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    /* Mobile Logo */
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h2 {
+        font-size: 24px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    nav.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 12px;
+        margin: 0;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content h2 {
+        font-size: 20px;
+    }
+
+    .announcement-box,
+    .course-box {
+        width: 100%;
+    }
+
+}
